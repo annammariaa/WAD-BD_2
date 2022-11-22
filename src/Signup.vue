@@ -1,11 +1,11 @@
 <script setup>
 import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
-import PostView from './views/PostView.vue';
+import Signup from './views/Signup.vue';
 </script>
 
 <template>
   <Header></Header>
-  <router-view></router-view>
+  <Signup></Signup>
   <Footer></Footer>
 </template>
