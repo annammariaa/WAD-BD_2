@@ -2,7 +2,7 @@
   <header>
     <ul id="nav-bar">
       <li class="nav-bar-element">
-        <router-link  class="nav-bar-link" to="/">Home</router-link>
+        <router-link class="nav-bar-link" to="/">Home</router-link>
         <router-link class="nav-bar-link" to="/signup">Signup</router-link>
 
       </li>
