@@ -8,15 +8,16 @@
 </template>
 
 <script>
-  let likes;
-
-  export {likes };
+  import store from '@/store/index'
 
   export default {
     data(){
       return{
         likes: 0,
       }
+    },
+    created() {
+      store.commit('addLike', this.likes);
     }
   }
 </script>
@@ -36,6 +37,7 @@
   .likes {
     float:right;
     display: inline-block;
+    text-align: right;
   }
 
 </style>

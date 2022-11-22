@@ -70,6 +70,10 @@ const store = createStore({
   },
 
   mutations: {
+    addLike (state, like) {
+      // mutate state
+      state.likeComponents.push(like)
+    }
   }
 })
 

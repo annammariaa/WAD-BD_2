@@ -5,11 +5,13 @@
 </template>
 
 <script>
-  import { likes } from './Like.vue'
+import store from '@/store/index'
   export default {
     methods: {
       resetAll(){
-        this.likes = 0;
+        for (let like in store.likeComponents) {
+          like.likes = 0;
+        }
       }
     }
   }

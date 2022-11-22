@@ -15,6 +15,7 @@
     <Like></Like>
 
   </div>
+
 </template>
 
 <script setup>
