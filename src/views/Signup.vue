@@ -5,13 +5,15 @@
     <div id="signup"></div>
     <form id="app" @submit.stop.prevent="handleSubmit" action="/" method="post" novalidate="false">
       <p>Email:</p>
-      <input v-model="message" placeholder="Click to edit" />
+      <input v-model="message" placeholder="Click to edit" type="email"/>
 
       <p>Password:</p>
       <input v-model="message" placeholder="Click to edit" />
+      
       <p>
         <input type="submit" value="Submit">
       </p>
+      
     </form>
   </div>
 </template>
@@ -20,7 +22,6 @@
 import router from '@/router/router'
 
 const handleSubmit = (() => {
-    // Add or update Car.
     router.push("/")
 })
 
