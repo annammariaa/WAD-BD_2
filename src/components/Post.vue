@@ -1,23 +1,31 @@
 <template>
-  <ul class="post-header">
-    <li style="text-align: right">{{ time }}</li>
-    <li><img :src="authorImage" alt="Profile photo" style="width: 40px"></li>
-  </ul>
-  <div class="post-text">
-    {{ body }}
-    <br>
+  <div class="post">
 
-    <img v-if="img" :src="img" alt="Body photo" class="post-img">
+    <ul class="post-header">
+      <li style="text-align: right">{{ time }}</li>
+      <li><img :src="authorImage" alt="Profile photo" style="width: 40px"></li>
+    </ul>
+
+    <div >
+      {{ body }}
+      <br>
+      <img v-if="img" :src="img" alt="Body photo" class="post-img">
+    </div>
+
+    <Like></Like>
+
   </div>
-  <img src="res/img/like.png" alt="Profile photo" style="width: 30px">
 </template>
 
 <script setup>
+
+import Like from '../components/Like.vue';
+
 const props = defineProps({
   img: String,
   body: String,
   time: String,
-  authorImage: String
+  authorImage: String,
 })
 </script>
 
@@ -37,11 +45,6 @@ const props = defineProps({
   padding: 0;
   overflow: hidden;
   border-radius: 10px;
-}
-
-.post-text {
-  padding: 10px;
-  margin: 0;
 }
 
 .post-img {

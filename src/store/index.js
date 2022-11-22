@@ -61,10 +61,14 @@ const store = createStore({
           "body": "Moved back to Tallinn for the summer!",
           "img": "/chillin.png"
         }
-      ]
+      ],
 
+      "likeComponents": [
+
+      ]
     }
   },
+
   mutations: {
   }
 })

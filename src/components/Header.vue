@@ -4,7 +4,7 @@
       <li class="nav-bar-element"><a href="index.html" class="nav-bar-link">Home</a></li>
       <li class="nav-bar-element"><a href="addPost.html" class="nav-bar-link">Add post</a></li>
       <div class="profile-img dropdown">
-        <img src="res/img/profile_photo.png" alt="Profile photo" style="width: 60px" onclick="dropdown()"
+        <img src="/profile_photo.png" alt="Profile photo" style="width: 60px" onclick="dropdown()"
           class="dropbtn">
       </div>
     </ul>
