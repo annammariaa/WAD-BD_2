@@ -1,6 +1,11 @@
 <template>
   <header>
     <ul id="nav-bar">
+      <li class="nav-bar-element"><a href="index.html" class="nav-bar-link">Home</a></li>
+      <li class="nav-bar-element"><a href="addPost.html" class="nav-bar-link">Add post</a></li>
+      <div class="profile-img dropdown">
+        <img src="/profile_photo.png" alt="Profile photo" style="width: 60px" onclick="dropdown()"
+          class="dropbtn">
       <li class="nav-bar-element">
         <router-link class="nav-bar-link" to="/">Home</router-link>
       </li>
